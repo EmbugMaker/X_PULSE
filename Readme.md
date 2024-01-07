@@ -1,9 +1,11 @@
 
 # Codes Demo  
 
-ÕâÊÇ X PULSE µÄÌÔ±¦µêÆÌµÄ×îÐ¡ÏµÍ³°åÊ¾ÀýÅäÌ×´úÂë¿â (Codes Demo for the smallest system boards of the microcontroller selled in X PULSE on TaoBao)
+è¿™æ˜¯ X PULSE çš„æ·˜å®åº—é“ºçš„æœ€å°ç³»ç»Ÿæ¿ç¤ºä¾‹é…å¥—ä»£ç åº“ (Codes Demo for the smallest system boards of the microcontroller salled in X PULSE on TaoBao)
 
-### ÒÑÅäÌ×Íê³É£º
+### å·²é…å¥—å®Œæˆï¼š
 
-- STM32G473CCU6
-- STM32L431RCT6
+- STM32G473CCU6_MIN_SYS_BOARD
+- STM32L431RCT6_MIN_SYS_BOARD
+- STM32F103RCT6_MIN_SYS_BOARD
+- STM32G431CBT6_MIN_SYS_BOARD
