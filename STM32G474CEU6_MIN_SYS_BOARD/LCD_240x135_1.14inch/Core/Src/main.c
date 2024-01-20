@@ -94,13 +94,14 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	Lcd_Init();
 	Lcd_Clear(BLACK);
-	
-//	Lcd_ShowPicture(0, 0, 240, 135, gImage_picture1);
-	// Lcd_ShowPicture(0, 20, 80, 80, logo);
-	Lcd_print( 120,   0,   RED, "X Pulse");
-//	Lcd_print( 120,  30,  BLUE, "X Pulse");
-//	Lcd_print( 120,  60, GREEN, "X Pulse");
-//	Lcd_print(45, 115, LIGHTBLUE, "2023-01-01 00:00:01");
+	Lcd_ShowPicture(160, 0, 80, 80, logo);
+	Lcd_print(0,   0,   RED, "X Pulse");
+	Lcd_print(0,  30,  BLUE, "X Pulse");
+	Lcd_print(0,  60, GREEN, "X Pulse");
+	Lcd_print(0, 115, LIGHTBLUE, "2024-01-01 00:00:01");
+	HAL_Delay(5000);
+	Lcd_Clear(BLACK);
+	Lcd_ShowPicture(0, 0, 240, 135, gImage_picture1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -108,7 +109,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+		
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
