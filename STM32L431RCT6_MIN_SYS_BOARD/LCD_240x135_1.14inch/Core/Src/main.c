@@ -94,11 +94,11 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	Lcd_Init();
 	Lcd_Clear(BLACK);
-	Lcd_print( 0,  50,   RED, "X Pulse");
-	Lcd_print( 0,  30,  BLUE, "X Pulse");
-	Lcd_print( 0,  60, GREEN, "X Pulse");
-	Lcd_print(45, 110, LIGHTBLUE, "2023-12-01 00:00:01");
-	HAL_Delay(1000);
+	Lcd_print( 0,  10,  BLUE, "X Pulse");
+	Lcd_print( 0,  30,   RED, "X Pulse");
+	Lcd_print( 0,  50, GREEN, "X Pulse");
+	Lcd_print( 0, 110, LIGHTBLUE, "2024-01-01 00:00:01");
+	HAL_Delay(2000);
 	
   /* USER CODE END 2 */
 
