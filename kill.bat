@@ -26,6 +26,24 @@ del *.sct /s
 del *.map /s
 
 del *.Ziniu /s
-del *.Penghui Gui /s
 del *.niu /s
+
+@echo off
+for /r %%i in (.vscode) do (
+    if /I "%%~nxi"==".vscode" (
+        echo Deleting: %%i
+        rd /s /q "%%i"
+    )
+)
+
+@echo off
+for /r %%i in (*.*) do (
+    echo %%~nxi | findstr /C:".Penghui Gui" 1>nul
+    if not errorlevel 1 (
+        echo Deleting: %%i
+        del /F /Q "%%i"
+    )
+)
+
+
 exit
