@@ -24,9 +24,11 @@ del *.iex /s
 del *.htm /s
 del *.sct /s
 del *.map /s
+del *.hex /s
 
 del *.Ziniu /s
 del *.niu /s
+del *.10194 /s
 
 @echo off
 for /r %%i in (.vscode) do (
@@ -35,15 +37,5 @@ for /r %%i in (.vscode) do (
         rd /s /q "%%i"
     )
 )
-
-@echo off
-for /r %%i in (*.*) do (
-    echo %%~nxi | findstr /C:".Penghui Gui" 1>nul
-    if not errorlevel 1 (
-        echo Deleting: %%i
-        del /F /Q "%%i"
-    )
-)
-
 
 exit
