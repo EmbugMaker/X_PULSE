@@ -54,7 +54,19 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+		static uint32_t tick = 0;
 
+    // non-blocking debouncing of buttons
+		if(HAL_GetTick() -  tick < 300)
+				return;
+		
+		tick = HAL_GetTick();
+		
+		if(GPIO_Pin == KEY_Pin)
+				HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+}
 /* USER CODE END 0 */
 
 /**
@@ -94,8 +106,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-    HAL_Delay(500);
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
